@@ -1,0 +1,275 @@
+/*mobile first*/
+body{
+  margin: auto;
+  max-width: 400px;
+}
+
+h1, h2, h3 {
+  font-family: 'Audiowide', cursive;
+  text-transform: lowercase;
+}
+
+p, a, li {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-right: 10px;
+  padding-left: 15px;
+}
+
+a:visited{
+  color: red;
+}
+
+a{
+  padding: 0;
+  text-decoration: none;
+}
+
+h1, 
+h2, 
+h3, 
+.intro, 
+.mainsupporting, 
+.sidebar{
+  border: solid black 15px;
+}
+
+h1{
+  font-size: 40px;
+  background: blue;
+  max-width: 50%;
+  position: relative;
+  left: -15px;
+  top: -48px;
+  padding-top: 75px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h2{
+  position: relative;
+  top: -96px;
+  left: -15px;
+  width: 94%;
+  background-color: red;
+  padding-top: 20px;
+  padding-left: 20px;
+  z-index: -1;
+}
+
+.intro{
+  border-bottom: 0;
+}
+
+.summary{
+  font-weight: bold;
+}
+
+.summary, 
+.preamble, 
+.mainsupporting, 
+.sidebar{
+  position: relative;
+  top: -100px;
+}
+
+h3{
+  border-left: 0;
+  border-right: 0;
+  background: yellow;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+footer{
+  background: black;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.mainsupporting{
+  border-bottom: 0;
+}
+
+li{
+  list-style-type: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*tablet*/
+@media only screen and (min-width: 600px) {
+  body{
+    max-width: 600px;
+  }
+  
+  h2, 
+  .summary{
+    width: 75%;
+    left: 19%;
+    border-right: 0;
+  }
+  
+  .summary{
+    border-left: solid black 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    top: -117px;
+  }
+  
+  .preamble, 
+  .mainsupporting{
+    top: -137px;
+  }
+  
+  .preamble{
+    width: 78.5%;
+    left: 19%;
+    border-left: solid black 15px;
+    padding-bottom: 5px;
+  }
+  
+  .explanation,
+  .participation,
+  .benefits,
+  .requirements{
+    width: 79%;
+    border-right: solid black 15px;
+    padding-bottom: 5px;
+    position: relative;
+  }
+  
+  .explanation{
+    padding-top: 15px;
+  }
+  
+  .participation{
+    top: -19px;
+  }
+  
+  .benefits{
+    top: -38px;
+  }
+  
+  .requirements{
+    top: -57px;
+  }
+  
+  footer{
+    position: relative;
+    top: -57px;
+  }
+  
+  .sidebar{
+    top: -194px;
+  }
+  
+  .design-selection{
+    border-bottom: solid black 15px;
+  }
+  
+  .select{
+    background-color: blue;
+  }
+  
+  .design-archives,
+  .zen-resources{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 48%;
+  }
+  
+  .zen-resources{
+    border-left: solid black 15px;
+  }
+  
+  .archives,
+  .resources{
+    width: 98%;
+  }
+  
+  .archives{
+    background-color: red;
+  }
+}
+
+/*desktop*/
+@media only screen and (min-width: 1200px){ 
+  body{
+    max-width: 1000px;
+  }
+  
+  h1{
+    width: 33%;
+    padding-top: 128px;
+    font-size: 75px;
+    text-align: right;
+    border-top: 0;
+    top: -62px;
+  }
+  
+  h2{
+    width: 60%;
+    top: -473px;
+    left: 37%;
+    padding-top: 100px;
+    font-size: 30px;
+  }
+  
+  .summary{
+    border-left: 0;
+    width: 60%;
+    top: -470px;
+    left: 39%;
+    font-size: 18px;
+    padding-top: 0px;
+  }
+  
+  .preamble, 
+  .mainsupporting{
+    top:-483px;
+  }
+  
+  .preamble{
+    width: 48%;
+  }
+  
+  .mainsupporting{
+    width: 66%;
+    border-bottom: solid black 15px;
+  }
+  
+  footer{
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  .sidebar{
+    width: 29.5%;
+    top: -2565px;
+    left: 67.5%;
+    padding-top: 20px;
+  }
+  
+  .select{
+    background-color: red;
+  }
+  
+  .design-archives,
+  .zen-resources{
+    width: 98.7%;
+    border-left: 0;
+  }
+  
+  .zen-resources{
+    border-top: solid black 15px;
+    padding-right: 5px;
+  }
+  
+  .archives{
+    background-color: blue;
+  }
+}
