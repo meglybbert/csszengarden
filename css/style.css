@@ -93,6 +93,14 @@ footer{
   border-bottom: 0;
 }
 
+.select{
+  background-color: blue;
+}
+
+.archives{
+  background-color: red;
+}
+
 li{
   list-style-type: none;
   padding-top: 5px;
@@ -170,10 +178,6 @@ li{
     border-bottom: solid black 15px;
   }
   
-  .select{
-    background-color: blue;
-  }
-  
   .design-archives,
   .zen-resources{
     display: inline-block;
@@ -189,10 +193,6 @@ li{
   .archives,
   .resources{
     width: 98%;
-  }
-  
-  .archives{
-    background-color: red;
   }
 }
 
